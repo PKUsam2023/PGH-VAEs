@@ -1,0 +1,7 @@
+- Python>=3.7.0
+- torch>=1.13.1
+- numpy>=1.21.5
+- scikit-learn>=0.24.2
+- matplotlib>=3.3.4
+
+# pip install -r requirements.txt
