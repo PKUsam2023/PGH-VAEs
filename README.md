@@ -1,9 +1,49 @@
-# Inverse Design of Catalytic Active Sites via Interpretable Topology-Based Deep Generative Models
-This repo contains demonstrations of an a persistent path homology-based semi-supervised prediction and generation framework, empowered by our PathVAEs. This framework aims to predict the adsorption energy and design potential for High-entropy alloy catalysts.
+# PGH-VAEs
 
-This repository is adapted from the codebase used to produce the results in the paper "Path topology-assisted Semi-supervised Framework for High-Entropy Alloy Catalysts Prediction and Generation."
+<div align='center'>
+ 
+<!-- [![preprint](https://img.shields.io/static/v1?label=arXiv&message=2310.12508&color=B31B1B)](https://www.google.com/) -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Requirements
+</div>
+
+**Title** - PGH-VAEs: Inverse Design of Catalytic Active Sites via Interpretable Topology-Based Deep Generative Models
+
+**Authors** - Bingxu Wang, Shisheng Zheng, Jie Wu, Jingyan Li and Feng Pan
+
+---
+
+## Table of Contents
+
+- [PGH-VAEs](#PGH-VAEs)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Model Architecture](#model-architecture)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+  - [Datasets](#Datasets)
+  - [Model Files](#Model-Files)
+  - [License](#license)
+  - [Citation](#citation)
+  - [Acknowledgements](#acknowledgements)
+
+---
+
+## Introduction
+This work present a persistent GLMY homology-based variational autoencoder framework (PGH-VAEs) designed to enable interpretable inverse design of catalytic active sites. PGH-VAEs integrate advanced topological algebraic analysis to mathematically quantify the three-dimensional structural sensitivity of active sites and establish intrinsic correlations with their adsorption properties. Using high-entropy alloys as a complex test case, PGH-VAEs demonstrate how the multi-channel encoding framework captures coordination and ligand effects at active sites, shaping the latent space of the generative model and significantly influencing the adsorption energies of key species. Building on the inverse design outcomes of PGH-VAEs, we propose strategies to optimize the composition and facet structures of high-entropy alloys to maximize the proportion of ideal active sites. This framework seamlessly combines catalyst design with topological analysis, offering a novel pathway for machine intelligence-driven development of efficient catalysts across diverse systems.
+
+> **Keywords**: Persistent GLMY homology, Deep learning Inverse design, Interpretability, Heterogeneous catalysis.
+
+## Model Architecture
+Schematic illustration of the overall PGH-VAEs framework is shown in below.
+
+![Model Architecture](Fig1.png)
+
+Further explain the details in the [paper](https://github.com/PKUsam2023/PGH-VAEs), providing context and additional information about the architecture and its components.
+
+## Getting Started
+
+### Prerequisites
 
 The code in this repo has been tested with the following software versions:
 - Python>=3.7.0
@@ -19,7 +59,7 @@ pip install -r requirements.txt
 
 We recommend using the Anaconda Python distribution, which is available for Windows, MacOS, and Linux. Installation for all required packages (listed above) has been tested using the standard instructions from the providers of each package.
 
-## Data
+## Datasets
 
 The data for path complexes constructed for different HEA catalysts calculated by DFT is located in the directory
 ```
@@ -44,7 +84,7 @@ The data for ligand features and coordination features of simulation-generated d
 To obtain full data, please contact 2101212695@stu.pku.edu.cn 
 
 
-## Files
+## Model Files
 
 This repo should contain the following files:
 - 1 ./get_data/get_feature.py - The code employed in the retrieval of data pertains to the path complexes derived from DFT calculations for various HEA catalysts.
@@ -60,7 +100,15 @@ This repo should contain the following files:
 - 11 ./latent_space/getdata.py - Method code for inputting data to PathVAEs.
 - 12 ./latent_space/get_100_result.py - The code employed to get the latent spaces of PathVAEs and the high potential HEA catalyst structures.
 
-## Other 
+If you find any bugs or have questions, please contact 2101212695@stu.pku.edu.cn
 
-If you find any bugs or have questions, please contact 2101212695@stu.pku.edu.cn # PathVAEs
-# PathVAEs
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Citation
+
+If you use this code or the pre-trained models in your work, please cite our work. 
+- Bingxu Wang, Shisheng Zheng, Jie Wu, Jingyan Li and Feng Pan. "PGH-VAEs: Inverse Design of Catalytic Active Sites via Interpretable Topology-Based Deep Generative Models"
