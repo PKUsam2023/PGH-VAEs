@@ -37,7 +37,7 @@ This work present a persistent GLMY homology-based variational autoencoder frame
 ## Model Architecture
 Schematic illustration of the overall PGH-VAEs framework is shown in below.
 
-![Model Architecture](Fig1.png)
+![Model Architecture](fig1.png)
 
 Further explain the details in the [paper](https://github.com/PKUsam2023/PGH-VAEs), providing context and additional information about the architecture and its components.
 
